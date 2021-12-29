@@ -1,9 +1,9 @@
 module.exports = {
-  title: `zoomkoding.com`,
-  description: `줌코딩의 개발일기`,
+  title: `Rachel's Dev Lab `,
+  description: `레이첼의 개발 실험실 🧪`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
   siteUrl: `https://www.zoomkoding.com`,
-  ogImage: `/og-image.png`, // Path to your in the 'static' folder
+  ogImage: `/intro.001.png`, // Path to your in the 'static' folder
   comments: {
     utterances: {
       repo: ``, // `zoomkoding/zoomkoding-gatsby-blog`,
@@ -11,16 +11,16 @@ module.exports = {
   },
   ga: '0', // Google Analytics Tracking ID
   author: {
-    name: `정진혁`,
+    name: `박보라`,
     bio: {
       role: `개발자`,
-      description: ['사람에 가치를 두는', '능동적으로 일하는', '이로운 것을 만드는'],
-      thumbnail: 'sample.png', // Path to the image in the 'asset' folder
+      description: ['함께하는 나아가고자 합니다.', '항상 고민하고 이를 해결하고자 합니다.', '꾸준한 성장을 추구합니다.'],
+      thumbnail: 'profile.png', // Path to the image in the 'asset' folder
     },
     social: {
-      github: ``, // `https://github.com/zoomKoding`,
+      github: `https://github.com/RachelParkBlog`, // `https://github.com/zoomKoding`,
       linkedIn: ``, // `https://www.linkedin.com/in/jinhyeok-jeong-800871192`,
-      email: ``, // `zoomkoding@gmail.com`,
+      email: `rachelpark.developer@gmail.com`, // `zoomkoding@gmail.com`,
     },
   },
 
@@ -43,12 +43,12 @@ module.exports = {
       // ========================================================
       // ========================================================
       {
-        date: '2021.02 ~',
+        date: '2021.12 ~',
         activity: '개인 블로그 개발 및 운영',
         links: {
-          post: '/gatsby-starter-zoomkoding-introduction',
-          github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
-          demo: 'https://www.zoomkoding.com',
+          post: '',
+          github: 'https://github.com/RachelParkBlog/zoomkoding-gatsby-blog',
+          demo: '',
         },
       },
     ],
@@ -72,15 +72,14 @@ module.exports = {
       // ========================================================
       // ========================================================
       {
-        title: '개발 블로그 테마 개발',
-        description:
-          '개발 블로그를 운영하는 기간이 조금씩 늘어나고 점점 많은 생각과 경험이 블로그에 쌓아가면서 제 이야기를 담고 있는 블로그를 직접 만들어보고 싶게 되었습니다. 그동안 여러 개발 블로그를 보면서 좋았던 부분과 불편했던 부분들을 바탕으로 레퍼런스를 참고하여 직접 블로그 테마를 만들게 되었습니다.',
-        techStack: ['gatsby', 'react'],
-        thumbnailUrl: 'blog.png',
+        title: '워시 코리아 웹 개발',
+        description:'기본적인 커머스 사이트로서 제품을 판매를 위한 다양한 서비스를 제공하고 있는 웹 사이트를 선정하여 프로젝트를 진행하였습니다. 개발은 초기 세팅부터 전부 직접 구현했으며, 실제 사용할 수 있는 서비스 수준으로 개발한 것입니다.',
+        techStack: ['React', 'Sass', 'AWS(EC2)'],
+        thumbnailUrl: 'warsh_korea.gif',  
         links: {
           post: '/gatsby-starter-zoomkoding-introduction',
-          github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
-          demo: 'https://www.zoomkoding.com',
+          github: 'https://github.com/wecode-bootcamp-korea/26-1st-WASH-Korea-frontend',
+          demo: 'https://drive.google.com/file/d/1BbsvlZo2QaIZrlAps9iEAxLlXMc7TCYO/view',
         },
       },
     ],
