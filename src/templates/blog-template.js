@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { graphql } from 'gatsby';
-import Layout from '../layout';
+import PageHeader from '../components/page-header';
 import Seo from '../components/seo';
 import PostHeader from '../components/post-header';
 import PostNavigator from '../components/post-navigator';
 import Post from '../models/post';
 import PostContent from '../components/post-content';
 import Utterances from '../components/utterances';
+import PageFooter from '../components/page-footer';
+import ThemeSwitch from '../components/theme-switch';
+import '../layout/style.scss';
 
 function BlogTemplate({ data }) {
   const [viewCount, setViewCount] = useState(null);
@@ -33,13 +36,16 @@ function BlogTemplate({ data }) {
   }, [siteUrl, curPost.slug]);
 
   return (
-    <Layout>  
+    <div className='page-wrapper'>
+      <PageHeader />  
       <Seo title={curPost?.title} description={curPost?.excerpt} />
       <PostHeader post={curPost} viewCount={viewCount} />
       <PostContent html={curPost.html} />
       <PostNavigator prevPost={prevPost} nextPost={nextPost} />
       {utterancesRepo && <Utterances repo={utterancesRepo} path={curPost.slug} />}
-    </Layout>
+      <PageFooter/>
+      <ThemeSwitch />
+    </div>
   );
 }
 
