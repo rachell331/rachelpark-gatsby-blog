@@ -9,7 +9,7 @@ import PostContent from '../components/post-content';
 import Utterances from '../components/utterances';
 import PageFooter from '../components/page-footer';
 import ThemeSwitch from '../components/theme-switch';
-import '../layout/style.scss';
+import './style.scss';
 
 function BlogTemplate({ data }) {
   const [viewCount, setViewCount] = useState(null);
