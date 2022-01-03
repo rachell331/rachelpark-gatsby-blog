@@ -1,13 +1,12 @@
 @use '../../styles/mixins'as *;
 
 .post-header {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
 
   padding-bottom: 10px;
-  border-bottom: 1px solid var(--post-card-border-color);
+  border-bottom: 0.5px solid var(--post-card-border-color);
 
   margin-top: 20px;
   margin-bottom: 40px;
