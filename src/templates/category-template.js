@@ -1,7 +1,6 @@
 import React, { useMemo, useCallback } from 'react';
 import { navigate } from 'gatsby';
-
-import Layout from '../layout';
+import Layout from '../postlayout';
 import Seo from '../components/seo';
 import Post from '../models/post';
 import CategoryPageHeader from '../components/category-page-header';

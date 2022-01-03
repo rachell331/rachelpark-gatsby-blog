@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { graphql } from 'gatsby';
-import Layout from '../layout';
+import Layout from '../postlayout';
 import Seo from '../components/seo';
 import PostHeader from '../components/post-header';
 import PostNavigator from '../components/post-navigator';

@@ -39,12 +39,6 @@ a {
     @include content-horizontal-padding;
 
     .page-content {
-        display: flex;
-        // flex-direction: column;
-        // @include content-max-width;
-        
-    }
-    .post-content {
         display: block;
     }
 }
