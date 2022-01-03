@@ -33,7 +33,7 @@ function BlogTemplate({ data }) {
   }, [siteUrl, curPost.slug]);
 
   return (
-    <Layout>
+    <Layout>  
       <Seo title={curPost?.title} description={curPost?.excerpt} />
       <PostHeader post={curPost} viewCount={viewCount} />
       <PostContent html={curPost.html} />

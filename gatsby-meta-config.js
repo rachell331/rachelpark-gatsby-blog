@@ -62,7 +62,7 @@ module.exports = {
       },
       {
         date: '2021.12 ~ 2021. 12',
-        activity: '스타트업 인턴십 진행 MVP 제작',
+        activity: '스타트업 인턴십 진행 MVP 개발 참여',
         links: {
           post: '',
           github: '',
@@ -99,12 +99,34 @@ module.exports = {
       // ========================================================
       // ========================================================
       {
-        title: '워시 코리아 웹 개발',
+        title: '파노믹스(Panomix) MVP 개발',
+        description:'기본적인 커머스 사이트로서 제품을 판매를 위한 다양한 서비스를 제공하고 있는 웹 사이트를 선정하여 프로젝트를 진행하였습니다. 개발은 초기 세팅부터 전부 직접 구현했으며, 실제 사용할 수 있는 서비스 수준으로 개발한 것입니다.',
+        techStack: ['React', 'Redux', 'Styled-Components', 'AWS(Cognito, Amplify)'],
+        thumbnailUrl: 'wash.png',  
+        links: {
+          post: '/gatsby-starter-zoomkoding-introduction',
+          github: 'https://github.com/wecode-bootcamp-korea/26-1st-WASH-Korea-frontend',
+          demo: 'https://drive.google.com/file/d/1BbsvlZo2QaIZrlAps9iEAxLlXMc7TCYO/view',
+        },
+      },
+      {
+        title: 'Prep 웹 개발',
+        description:'기본적인 커머스 사이트로서 제품을 판매를 위한 다양한 서비스를 제공하고 있는 웹 사이트를 선정하여 프로젝트를 진행하였습니다. 개발은 초기 세팅부터 전부 직접 구현했으며, 실제 사용할 수 있는 서비스 수준으로 개발한 것입니다.',
+        techStack: ['React', 'Styled-Components', 'AWS(EC2)'],
+        thumbnailUrl: 'wash.png',  
+        links: {
+          post: '/gatsby-starter-zoomkoding-introduction',
+          github: 'https://github.com/wecode-bootcamp-korea/26-1st-WASH-Korea-frontend',
+          demo: 'https://drive.google.com/file/d/1BbsvlZo2QaIZrlAps9iEAxLlXMc7TCYO/view',
+        },
+      },
+      {
+        title: 'WASH Korea 웹 개발',
         description:'기본적인 커머스 사이트로서 제품을 판매를 위한 다양한 서비스를 제공하고 있는 웹 사이트를 선정하여 프로젝트를 진행하였습니다. 개발은 초기 세팅부터 전부 직접 구현했으며, 실제 사용할 수 있는 서비스 수준으로 개발한 것입니다.',
         techStack: ['React', 'Sass', 'AWS(EC2)'],
         thumbnailUrl: 'wash.png',  
         links: {
-          post: '/gatsby-starter-zoomkoding-introduction',
+          post: '/wash-korea-project',
           github: 'https://github.com/wecode-bootcamp-korea/26-1st-WASH-Korea-frontend',
           demo: 'https://drive.google.com/file/d/1BbsvlZo2QaIZrlAps9iEAxLlXMc7TCYO/view',
         },

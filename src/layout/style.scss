@@ -42,5 +42,9 @@ a {
         display: flex;
         // flex-direction: column;
         // @include content-max-width;
+        
+    }
+    .post-content {
+        display: block;
     }
 }
