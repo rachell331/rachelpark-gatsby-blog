@@ -3,8 +3,10 @@
 .post-navigator {
   display: grid;
   width: 100%;
+  max-width: 720px;
   grid-template-columns: 49.3% 49.3%;
   column-gap: 1.4%;
+  margin: 0 auto;
 
   .post-card {
     display: flex;

@@ -19,22 +19,20 @@ categories: Project
 - 구매자들의 별점 및 후기 제공
 - 가장 많이 찾는 제품군 검색 기능 제공
 
------
-  ### 개발 인원 및 기간
+>  ### 개발 인원 및 기간
 - 개발기간 : 2021/11/1 ~ 2021/11/12
 - 개발 인원 : 프론트엔드 3명, 백엔드 2명
 - Frontend github 링크 : https://github.com/wecode-bootcamp-korea/26-1st-WASH-Korea-frontend
 - Backend github 링크 : https://github.com/wecode-bootcamp-korea/26-1st-WASH-Korea-backend
---------
-### 프론트엔드 필수구현사항
+
+>### 프론트엔드 필수구현사항
 1. 회원가입, 로그인 기능
 2. 제품 카테고리별 리스트 - 카테고리 필터링 기능, 가격순 정렬 기능
 3. 제품 상세 페이지 - 카테고리별 페이지 이동 기능, 구매수량 반영 버튼, 탭 메뉴 스크롤 버튼, 리뷰작성 기능
 
----------
 ## 프로젝트 Wrap-up
 
-### <span style="background-color: #eed;">내가 맡은 기능</span>
+>### <span style="background-color: #eed;">내가 맡은 기능</span>
 #### ✔ Navigation Bar
 - MouseEnter/Leave 이벤트를 이용한 메뉴 dropdown 기능 구현
 - '제품'이 아닌 대메뉴에서는 SubMenu를 노출시키지 않도록 구현
@@ -53,8 +51,9 @@ categories: Project
 
 #### ✔ Others
 AWS 프론트 배포
+<br/>
 
-### <span style="background-color: #eed;">프로젝트를 진행하면서</span>
+## <span style="background-color: #eed;">프로젝트를 진행하면서</span>
 ![](https://images.velog.io/images/bori9412/post/56181651-1ad3-4f66-9b48-6a800be07260/image.png)
 ![](https://images.velog.io/images/bori9412/post/eb4810fc-6518-4089-8771-200e259a7d99/image.png)
 ![](https://images.velog.io/images/bori9412/post/2a32a088-a245-4cde-972d-b72e5723d0a0/image.png)
@@ -64,7 +63,7 @@ AWS 프론트 배포
 백엔드 팀원분들이 항상 프론트의 의견을 물어보고, 프론트 역시 백엔드에게 계속해서 물어보고, 데이터를 가져오는 형식에 대해 함께 고민하면서 문제를 해결해나가는 과정이 정말 재미있었다.
 
 
-### <span style="background-color: #eed;">프로젝트를 마치며.. </span>
+## <span style="background-color: #eed;">프로젝트를 마치며.. </span>
 1차 프로젝트를 수행하면서 느낀 점은 확실히 프로젝트라는 하나의 이름으로 다양한 사람들과 협업했을 때 나오는 다양한 생각들과 커뮤니케이션은 내가 생각했던 것보다 컸다.
 
 솔직하게 말하자면, 나만 잘하면 될 줄 알았다. 
