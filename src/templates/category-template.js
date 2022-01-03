@@ -1,10 +1,13 @@
 import React, { useMemo, useCallback } from 'react';
-import { navigate } from 'gatsby';
-import Layout from '../layout';
+import { graphql, navigate, useStaticQuery } from 'gatsby';
 import Seo from '../components/seo';
+import PageHeader from '../components/page-header';
+import PageFooter from '../components/page-footer';
+import ThemeSwitch from '../components/theme-switch';
 import Post from '../models/post';
 import CategoryPageHeader from '../components/category-page-header';
 import PostTabs from '../components/post-tabs';
+import '../layout/style.scss';
 
 function CategoryTemplate({ pageContext }) {
   const { edges, currentCategory } = pageContext;
@@ -23,8 +26,27 @@ function CategoryTemplate({ pageContext }) {
     [categories],
   );
 
+  const data = useStaticQuery(graphql`
+    query categoryTitelQuery {
+      site {
+        siteMetadata {
+          title
+          author {
+            name
+            social {
+              github
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const {title, author} = data.site.siteMetadata;
+
   return (
-    <Layout>
+    <div className='page-wrapper'>
+      <PageHeader siteTitle={title || `Title`}/>
       <Seo title="Posts" />
       <CategoryPageHeader title={categories[currentTabIndex]} subtitle={`${posts.length} posts`} />
       <PostTabs
@@ -33,7 +55,12 @@ function CategoryTemplate({ pageContext }) {
         tabs={categories}
         posts={posts}
       />
-    </Layout>
+      <PageFooter
+        author={author.name || `Author`}
+        githubUrl={author.social?.github || `https://www.github.com`}
+      />
+      <ThemeSwitch />
+    </div>
   );
 }
 
