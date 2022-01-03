@@ -3,12 +3,14 @@ import ReactRotatingText from 'react-rotating-text';
 import IconButtonBar from '../icon-button-bar';
 import Image from '../image';
 import './style.scss';
+import './../../../assets/rachel.png'
 
 function Bio({ author, language = 'ko' }) {
   if (!author) return null;
   const { bio, social, name } = author;
   return (
     <div className="bio">
+      <Image className="thumbnail" src={bio.thumbnail} alt="thumbnail" />
       {language === 'ko' ? (
         <div className="introduction korean">
           <p className="title">
@@ -43,7 +45,6 @@ function Bio({ author, language = 'ko' }) {
           </div>
         </div>
       )}
-      <Image className="thumbnail" src={bio.thumbnail} alt="thumbnail" />
     </div>
   );
 }
