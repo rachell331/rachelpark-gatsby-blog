@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { graphql } from 'gatsby';
-import Layout from '../postlayout';
+import Layout from '../layout';
 import Seo from '../components/seo';
 import PostHeader from '../components/post-header';
 import PostNavigator from '../components/post-navigator';
@@ -33,7 +33,7 @@ function BlogTemplate({ data }) {
   }, [siteUrl, curPost.slug]);
 
   return (
-    <Layout>
+    <Layout>  
       <Seo title={curPost?.title} description={curPost?.excerpt} />
       <PostHeader post={curPost} viewCount={viewCount} />
       <PostContent html={curPost.html} />
