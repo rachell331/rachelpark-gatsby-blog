@@ -7,7 +7,7 @@ import ThemeSwitch from '../components/theme-switch';
 import Post from '../models/post';
 import CategoryPageHeader from '../components/category-page-header';
 import PostTabs from '../components/post-tabs';
-import '../layout/style.scss';
+import './style.scss';
 
 function CategoryTemplate({ pageContext }) {
   const { edges, currentCategory } = pageContext;
