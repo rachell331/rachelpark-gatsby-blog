@@ -14,7 +14,7 @@ module.exports = {
     name: `박보라`,
     bio: {
       role: `개발자`,
-      description: ['함께하는 나아가고자 합니다.', '항상 고민하고 이를 해결하고자 합니다.', '꾸준한 성장을 추구합니다.'],
+      description: ['꾸준한 성장을 추구하는'],
       thumbnail: 'profile.png', // Path to the image in the 'asset' folder
     },
     social: {

@@ -14,7 +14,8 @@ function Bio({ author, language = 'ko' }) {
           <p className="title">
             안녕하세요.
             <br />
-            <ReactRotatingText items={bio.description} />
+            {/* <ReactRotatingText items={bio.description} /> */}
+            {bio.description}
             <br />
             {bio.role} <strong>{name}</strong>입니다.
             <br />
