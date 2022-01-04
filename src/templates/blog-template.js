@@ -17,7 +17,7 @@ function BlogTemplate({ data }) {
   const curPost = new Post(data.cur);
   const prevPost = data.prev && new Post(data.prev);
   const nextPost = data.next && new Post(data.next);
-  const { siteUrl, comments } = data.site?.siteMetadata;
+  const { siteUrl, comments, title, author } = data.site?.siteMetadata;
   const utterancesRepo = comments?.utterances?.repo;
 
   useEffect(() => {
@@ -37,13 +37,15 @@ function BlogTemplate({ data }) {
 
   return (
     <div className='page-wrapper'>
-      <PageHeader />  
+      <PageHeader siteTitle={title || `Title`}/>  
       <Seo title={curPost?.title} description={curPost?.excerpt} />
       <PostHeader post={curPost} viewCount={viewCount} />
       <PostContent html={curPost.html} />
       <PostNavigator prevPost={prevPost} nextPost={nextPost} />
       {utterancesRepo && <Utterances repo={utterancesRepo} path={curPost.slug} />}
-      <PageFooter/>
+      <PageFooter
+        author={author.name || `Author`}
+        githubUrl={author.social?.github || `https://www.github.com`}/>
       <ThemeSwitch />
     </div>
   );
@@ -62,7 +64,6 @@ export const pageQuery = graphql`
         title
         categories
         author
-        emoji
       }
       fields {
         slug
@@ -77,7 +78,6 @@ export const pageQuery = graphql`
         title
         categories
         author
-        emoji
       }
       fields {
         slug
@@ -92,7 +92,6 @@ export const pageQuery = graphql`
         title
         categories
         author
-        emoji
       }
       fields {
         slug
@@ -101,6 +100,13 @@ export const pageQuery = graphql`
 
     site {
       siteMetadata {
+        title
+          author {
+            name
+            social {
+              github
+            }
+          }
         siteUrl
         comments {
           utterances {

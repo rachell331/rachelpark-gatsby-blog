@@ -27,7 +27,7 @@ function CategoryTemplate({ pageContext }) {
   );
 
   const data = useStaticQuery(graphql`
-    query categoryTitelQuery {
+    query categoryTitleQuery {
       site {
         siteMetadata {
           title
