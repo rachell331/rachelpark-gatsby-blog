@@ -100,18 +100,18 @@ module.exports = {
       // ========================================================
       {
         title: '파노믹스(Panomix) MVP 개발',
-        description:'기본적인 커머스 사이트로서 제품을 판매를 위한 다양한 서비스를 제공하고 있는 웹 사이트를 선정하여 프로젝트를 진행하였습니다. 개발은 초기 세팅부터 전부 직접 구현했으며, 실제 사용할 수 있는 서비스 수준으로 개발한 것입니다.',
+        description:'페이스북, 구글 Analytics 등 마케팅 데이터를 종합 분석하며, 데이터를 자동화, 시각화하여 퍼포먼스 마케팅 대행사입니다.',
         techStack: ['React', 'Redux', 'Styled-Components', 'AWS(Cognito, Amplify)'],
-        thumbnailUrl: 'wash.png',  
+        thumbnailUrl: 'panomix.png',  
         links: {
-          post: '/gatsby-starter-zoomkoding-introduction',
-          github: 'https://github.com/wecode-bootcamp-korea/26-1st-WASH-Korea-frontend',
-          demo: 'https://drive.google.com/file/d/1BbsvlZo2QaIZrlAps9iEAxLlXMc7TCYO/view',
+          post: '/internship',
+          github: '',
+          demo: '',
         },
       },
       {
         title: 'Prep 웹 개발',
-        description:'기본적인 커머스 사이트로서 제품을 판매를 위한 다양한 서비스를 제공하고 있는 웹 사이트를 선정하여 프로젝트를 진행하였습니다. 개발은 초기 세팅부터 전부 직접 구현했으며, 실제 사용할 수 있는 서비스 수준으로 개발한 것입니다.',
+        description:'액티비티를 소개, 공유, 판매하는 플랫폼 웹 서비스. 판매부터 추천기능, 원하는 액티비티 저장 및 참여 후 후기를 남길 수 있는 등 다양한 서비스를 제공합니다.',
         techStack: ['React', 'React Hooks', 'Styled-Components', 'AWS(S3)' ],
         thumbnailUrl: 'prep.png',  
         links: {
