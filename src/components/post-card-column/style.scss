@@ -4,7 +4,6 @@
   justify-content: center;
   width: 100%;
 
-
   .post-card-column {
     display: flex;
     flex-direction: column;
@@ -19,6 +18,7 @@
       font-weight: 500;
       font-size: 15px;
       background-color: var(--button-background-color);
+      color: #333;
     }
   }
 }
