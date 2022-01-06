@@ -1,3 +1,12 @@
+---
+emoji:
+title: WASH - fetch()를 이용한 API 통신
+date: '2022-01-06 15:31:23'
+author: Rachel
+tags: Project
+categories: Project
+---
+
 ## Using Fetch
 
 ```js

@@ -1,3 +1,12 @@
+---
+emoji:
+title: WASH - ProductDetailPage
+date: '2022-01-06 15:31:44'
+author: Rachel
+tags: Project
+categories: Project
+---
+
 > **필수구현 사항**
 
 - 구매 수량 버튼을 눌렀을 때 수량에 따른 가격 변동

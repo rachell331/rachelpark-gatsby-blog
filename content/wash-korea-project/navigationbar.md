@@ -1,4 +1,11 @@
-전체 UI화면에 공통사항으로 적용될 Navigation 컴포넌트 작성하기
+---
+emoji:
+title: WASH - 전체 UI화면에 공통사항으로 적용될 Navigation 컴포넌트 작성하기
+date: '2022-01-06 15:30:10'
+author: Rachel
+tags: Project
+categories: Project
+---
 
 > **필수구현사항**
 
