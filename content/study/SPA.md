@@ -39,4 +39,4 @@ SPA는 CSR 방식이기 때문에 애플리케이션의 모든 페이지들이 J
 ### <span style="font-weight: 600; background-color: #F8EDED;">단점을 보완할 수 있는 방법?</span>
 
 서버 사이드 렌더링(SSR)을 통해 CSR의 단점을 보완한다
-![서버사이르렌더링 자세히 보러가기]('./SSR_CSR.md')
+![서버사이드렌더링 자세히 보러가기]('./SSR_CSR.md')
