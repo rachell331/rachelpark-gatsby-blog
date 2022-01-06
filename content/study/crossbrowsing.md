@@ -185,5 +185,3 @@ import 'react-app-polyfill/stable';
 stable은 package.json의 browserslist에 해당하는 브라우저에 대해 안정적인 코드를 사용할 수 있게 한다.
 
 - 적용되지 않는 경우 node_modules/.cache 폴더 삭제하고 다시 실행.
-
-[https://velog.io/@jazzyfact95/TIL-React-IE-크로스-브라우징](https://velog.io/@jazzyfact95/TIL-React-IE-%ED%81%AC%EB%A1%9C%EC%8A%A4-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A7%95)
