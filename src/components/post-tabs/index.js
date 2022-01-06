@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-// import { Tabs, Tab } from '@mui/material';
+import { Tabs, Tab } from '@mui/material';
 import PostCardColumn from '../post-card-column';
 import './style.scss';
 
@@ -11,7 +11,7 @@ function PostTabs({ tabIndex, onChange, tabs, posts, showMoreButton }) {
 
   return (
     <div className="post-tabs-wrapper">
-      {/* <div className="post-tabs">
+      <div className="post-tabs">
         <Tabs
           className="mui-tabs"
           value={tabIndex}
@@ -23,7 +23,7 @@ function PostTabs({ tabIndex, onChange, tabs, posts, showMoreButton }) {
             <Tab label={title} key={index} />
           ))}
         </Tabs>
-      </div> */}
+      </div>
       <PostCardColumn
         posts={showMoreButton ? tabPosts.slice(0, 4) : tabPosts}
         showMoreButton={showMoreButton && tabPosts.length > 4}

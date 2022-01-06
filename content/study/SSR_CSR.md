@@ -1,15 +1,11 @@
 ---
 emoji:
-title: WASH Korea Project
+title: SSR / CSR
 date: '2022-01-06 19:09:43'
 author: Rachel
 tags: Front Study
 categories: Study
 ---
-
-# SSR / CSR
-
-태그: common
 
 ## SSR vs CSR
 
