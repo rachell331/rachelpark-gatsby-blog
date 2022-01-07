@@ -40,7 +40,7 @@ _“바벨은 주로 ECMAScript 2015+ 코드를 현재 및 과거의 브라우�
 
 `window.fetch` (프라미스 기반 웹 요청 방법)
 
-`Object.assign` (`{ ...a, ...b }` 등 Object 스프레드에 필요한 )
+`Object.assign` (`{ ...a, ...b }` 등 Object 스프레드에 필요한)
 
 `Symbol` (`for...of` 구문과 그 친구들이 사용하는 내장 객체)
 
@@ -78,9 +78,6 @@ Internet Explorer 8+ (sure, IE8 with ES3 limitations; IE7- also should work, but
 다음은, 경우에 따라 크로스 브라우징 이슈에 대응하기 위한 자료이다.
 
 [HTML5 Cross Browser Polyfills · Modernizr/Modernizr Wiki](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills)
-
 [https://velog.io/@jazzyfact95/TIL-React-IE-크로스-브라우징](https://velog.io/@jazzyfact95/TIL-React-IE-%ED%81%AC%EB%A1%9C%EC%8A%A4-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A7%95)
-
 [https://devowen.com/293](https://devowen.com/293)
-
 [https://developer.mozilla.org/ko/docs/Glossary/Polyfill](https://developer.mozilla.org/ko/docs/Glossary/Polyfill)
