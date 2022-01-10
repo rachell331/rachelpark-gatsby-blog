@@ -3,13 +3,13 @@ emoji:
 title: Life Cycle
 date: '2022-01-11 00:04:18'
 author: Rachel
-tags: Front Study
-categories: Study
+tags: Front Study React
+categories: Study React
 ---
 
-![Screen Shot 2022-01-10 at 8.36.36 PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5ebf77cb-f7f3-4e53-8503-e4fc2e351705/Screen_Shot_2022-01-10_at_8.36.36_PM.png)
+![componentlife_cycle](componentlifecycle.001.png)
 
-### class형 컴포넌트에서의 lifecycle
+## <p style="font-weight: 900; background-color: #f7f3f8; color: #9065af;">class형 컴포넌트에서의 lifecycle</p>
 
 ```jsx
 class Detail2 extends React.Component {
@@ -23,7 +23,7 @@ class Detail2 extends React.Component {
 }
 ```
 
-### Life Cycle method
+### <span style="font-weight: 700;">Life Cycle method</span>
 
 - 각각의 컴포넌트들은 각자의 라이프 사이클을 가지며, 총 3가지 단계로 나뉜다.
   Mounting(생성or마운트), Updating(업데이트), and Unmounting(제거or언마운트)
@@ -125,8 +125,11 @@ getSnapshotBeforeUpdate(prevProps, prevState) {
 
 - error: 어떤 에러가 발생했는지 알려준다. (단, this.props.children으로 전달되는 컴포넌트에서 발생하는 에러만 잡아준다.)
 - info : 어디에 있는 코드에서 오류가 발생했는지 알려준다.
+  <br/>
+  <br/>
+  <br/>
 
-### function형 컴포넌트에서의 lifecycle : **useEffect()사용**
+## <p style="font-weight: 900; background-color: #f7f3f8; color: #9065af;">function형 컴포넌트에서의 lifecycle : **useEffect()사용**</p>
 
 🍇 컴포넌트가 **생성, 업데이트 될 때** 특정 코드를 실행할 수 있다.
 
@@ -142,6 +145,8 @@ function App() {
   return <div></div>;
 }
 ```
+
+<br/>
 
 🍇 컴포넌트가 **사라질 때**(unmount 될 때) → `return` 문으로 반환해준다
 
@@ -162,6 +167,8 @@ function App() {
 }
 ```
 
+<br/>
+
 🍇 useEffect **여러번** 사용할 때
 
 ```jsx
@@ -179,6 +186,7 @@ function App() {
 }
 ```
 
+<br/>
 🍇 최초1회만 실행하고, 업데이트때는 실행하지 않음
 
 ```jsx
@@ -187,6 +195,7 @@ useEffect(() => {
 }, []);
 ```
 
+<br/>
 🍇 특정state값이 변경될때만 실행됨
 
 ```jsx
@@ -197,8 +206,12 @@ useEffect(() => {
 }, [alert]);
 ```
 
-> 💡 **state값에 따라서 UI가 보여지고/ 안보여지게 만들었는데 항상 이렇게 만듭니까?**
-> → **YES**, 항상 보이는 UI가 아니라면 이렇게 만든다.
+<br/>
+
+💡 **state값에 따라서 UI가 보여지고/ 안보여지게 만들었는데 항상 이렇게 만듭니까?**
+<br/>→ **YES**, 항상 보이는 UI가 아니라면 이렇게 만든다.
+
+<br/>
 
 ```jsx
 const [hideAlarm, setHideAlarm] = useState(false);
