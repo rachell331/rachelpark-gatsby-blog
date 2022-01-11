@@ -6,6 +6,7 @@
   "author": "zoomkoding <zoomkoding@gmail.com>",
   "dependencies": {
     "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
     "@mui/icons-material": "^5.1.0",
     "@mui/material": "^5.1.0",
     "@netlify/plugin-gatsby": "^1.0.3",
@@ -58,11 +59,9 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zoomkoding/zoomkoding-gatsby-blog"
-  },
+  "repository": "https://github.com/zoomkoding/zoomkoding-gatsby-blog",
   "bugs": {
     "url": "https://github.com/zoomkoding/zoomkoding-gatsby-blog/issues"
-  }
+  },
+  "main": "index.js"
 }
