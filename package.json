@@ -5,6 +5,7 @@
   "version": "2.0.0",
   "author": "zoomkoding <zoomkoding@gmail.com>",
   "dependencies": {
+    "@emotion/react": "^11.7.1",
     "@mui/icons-material": "^5.1.0",
     "@mui/material": "^5.1.0",
     "@netlify/plugin-gatsby": "^1.0.3",
@@ -48,9 +49,9 @@
   ],
   "license": "0BSD",
   "scripts": {
-    "build": "gatsby clean && gatsby build",
+    "build": "gatsby clean && CI= gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "format": "prettier --write \"./*.{js,jsx,ts,tsx,json,md}\"",
     "deploy": "gatsby clean && gatsby build && gh-pages -d public",
     "start": "npm run develop",
     "serve": "gatsby serve",

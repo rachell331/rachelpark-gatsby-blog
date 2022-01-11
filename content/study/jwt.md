@@ -7,15 +7,7 @@ tags: Front Study
 categories: Study
 ---
 
-<<<<<<< HEAD
-
-## 일반적인 인증 토큰 vs 클레임(Claim) 기반 토큰
-
-=======
-
 ## <span style="font-weight: 900;">일반적인 인증 토큰 vs 클레임(Claim) 기반 토큰</span>
-
-> > > > > > > 91a7cc9 (Modified: post content modify)
 
 OAuth에 의해서 발급되는 access token은 일반적을 random한 의미없는 스트링 형태이다.
 
