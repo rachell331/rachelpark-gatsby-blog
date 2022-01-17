@@ -11,7 +11,7 @@ categories: React Typescript
 
 1. 설치
 
-```tsx
+```json
 yarn create react-app my-app --template typescript
 ```
 
@@ -44,14 +44,14 @@ yarn create react-app my-app --template typescript
 3. eslint, prettier 설정
    참고 : [https://pravusid.kr/typescript/2020/07/19/typescript-eslint-prettier.html](https://pravusid.kr/typescript/2020/07/19/typescript-eslint-prettier.html)
 
-```tsx
+```json
 npm i --save typescript eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
 npm i --save prettier eslint-plugin-prettier eslint-config-prettier
 ```
 
 `.eslintrc.json` 파일 루트 디렉토리에 생성
 
-```tsx
+```jsx
 {
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -73,7 +73,7 @@ npm i --save prettier eslint-plugin-prettier eslint-config-prettier
 
 4. `.vscode/setting.json`
 
-```tsx
+```jsx
 {
   "eslint.validate": [
     { "language": "typescript", "autoFix": true },
@@ -86,7 +86,8 @@ npm i --save prettier eslint-plugin-prettier eslint-config-prettier
 
 5. .gitignore
 
-```tsx
+```jsx
+
 .eslintcache
 .vscode
 .eslintrc
@@ -95,19 +96,19 @@ npm i --save prettier eslint-plugin-prettier eslint-config-prettier
 
 6. router 설치
 
-```tsx
+```json
 npm i --save react-router-dom @types/react-router-dom
 ```
 
 7. style-component 설치
 
-```tsx
+```jsx
 npm i styled-components @types/styled-components
 ```
 
 8. reset style 설치
 
-```tsx
+```jsx
 yarn add styled-reset
 ```
 
@@ -115,7 +116,7 @@ yarn add styled-reset
 
 - react+typescript globalstyle 적용하기 + 스타일 props로 넘겨줘서 사용하기
 
-```tsx
+```jsx
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 
@@ -142,7 +143,7 @@ const GlobalStyle = createGlobalStyle`
 export default GlobalStyle;
 ```
 
-```tsx
+```jsx
 export interface ThemeProps {
   [key: string]: string | object;
 }
@@ -192,7 +193,7 @@ export const theme: ThemeProps = {
 
 - `기존`
 
-```tsx
+```jsx
 const PageNumber = styled.a`
   padding: 10px;
   font-size: 1.375rem;
@@ -206,7 +207,7 @@ const PageNumber = styled.a`
 
 - `typescript` : type이 지정이 안되어있다는 에러가 나온다
 
-```tsx
+```jsx
 const theme: { [key: string]: string } = {
   bgColor: '#f0f3f8',
   mainColor: '#333333',
