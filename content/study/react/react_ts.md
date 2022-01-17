@@ -11,11 +11,11 @@ categories: React Typescript
 
 1. 설치
 
-```json
+```tsx
 yarn create react-app my-app --template typescript
 ```
 
-1. tsconfig.json 설정
+2. tsconfig.json 설정
 
 ```
 {
@@ -41,17 +41,17 @@ yarn create react-app my-app --template typescript
 }
 ```
 
-1. eslint, prettier 설정
+3. eslint, prettier 설정
    참고 : [https://pravusid.kr/typescript/2020/07/19/typescript-eslint-prettier.html](https://pravusid.kr/typescript/2020/07/19/typescript-eslint-prettier.html)
 
-```json
+```tsx
 npm i --save typescript eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
 npm i --save prettier eslint-plugin-prettier eslint-config-prettier
 ```
 
 `.eslintrc.json` 파일 루트 디렉토리에 생성
 
-```jsx
+```tsx
 {
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -71,9 +71,9 @@ npm i --save prettier eslint-plugin-prettier eslint-config-prettier
 
 참고[https://stackoverflow.com/questions/65675771/eslint-couldnt-find-the-config-prettier-typescript-eslint-after-relocating](https://stackoverflow.com/questions/65675771/eslint-couldnt-find-the-config-prettier-typescript-eslint-after-relocating)
 
-`.vscode/setting.json`
+4. `.vscode/setting.json`
 
-```jsx
+```tsx
 {
   "eslint.validate": [
     { "language": "typescript", "autoFix": true },
@@ -84,54 +84,115 @@ npm i --save prettier eslint-plugin-prettier eslint-config-prettier
 }
 ```
 
-1. .gitignore
+5. .gitignore
 
-```jsx
+```tsx
 .eslintcache
 .vscode
 .eslintrc
 .prettierrc
 ```
 
-1. router 설치
+6. router 설치
 
-```jsx
+```tsx
 npm i --save react-router-dom @types/react-router-dom
 ```
 
-1. style-component 설치
+7. style-component 설치
 
-```jsx
+```tsx
 npm i styled-components @types/styled-components
 ```
 
-1. reset style 설치
+8. reset style 설치
 
-```jsx
+```tsx
 yarn add styled-reset
 ```
 
-1. `Globalstyle.tsx` & `theme.tsx` 설정하기
+9. `Globalstyle.tsx` & `theme.tsx` 설정하기
 
 - react+typescript globalstyle 적용하기 + 스타일 props로 넘겨줘서 사용하기
 
-[https://velog.io/@tunakim/Global-styled-components-설정-TypeScript에서-styled-components-적용](https://velog.io/@tunakim/Global-styled-components-%EC%84%A4%EC%A0%95-TypeScript%EC%97%90%EC%84%9C-styled-components-%EC%A0%81%EC%9A%A9)
+```tsx
+import { createGlobalStyle } from 'styled-components';
+import reset from 'styled-reset';
 
-[https://watermelonlike.tistory.com/152](https://watermelonlike.tistory.com/152) (theme.tsx 설정방법 상세히 나와있음)
+const GlobalStyle = createGlobalStyle`
+  ${reset};
+  
+  * {
+    box-sizing: border-box;
+  }
 
-[https://velog.io/@hwang-eunji/styled-component-typescript](https://velog.io/@hwang-eunji/styled-component-typescript) (theme.tsx 설정2)
+  html, body {
+    background: #f0f3f8;
+  }
 
-[https://kyounghwan01.github.io/blog/TS/React/styled-components-preset/#만든-스타입을-적용](https://kyounghwan01.github.io/blog/TS/React/styled-components-preset/#%E1%84%86%E1%85%A1%E1%86%AB%E1%84%83%E1%85%B3%E1%86%AB-%E1%84%89%E1%85%B3%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%B8%E1%84%8B%E1%85%B3%E1%86%AF-%E1%84%8C%E1%85%A5%E1%86%A8%E1%84%8B%E1%85%AD%E1%86%BC)
-(끝판왕. 다 나와있음. 초기세팅 → globalstyel, theme 작성 → 적용 → 컴포넌트에서 사용)
+  a {
+    text-decoration: none;
+    
+    &:visited {
+      color: black;
+    }
+  }
+`;
 
-<aside>
-💡 theme 다른 파일에서 불러와서 사용하고 싶을 때는 어떻게 하나?
+export default GlobalStyle;
+```
 
-</aside>
+```tsx
+export interface ThemeProps {
+  [key: string]: string | object;
+}
 
-`기존`
+export const theme: ThemeProps = {
+  bgColor: '#f0f3f8',
+  mainColor: '#333333',
+  fontBlack: '#000000',
+  fontWhite: '#ffffff',
 
-```jsx
+  wrapper: {
+    width: '100%',
+    maxWidth: '600px',
+    margin: '0 auto',
+    backgroundColor: '#ffffff',
+  },
+
+  flexCenter: {
+    display: 'flex',
+    justifyContnet: 'center',
+    alignItems: 'center',
+  },
+
+  positionRelativeTop: {
+    position: 'relative',
+    top: 0,
+    left: 0,
+  },
+
+  positionRelativeCenter: {
+    position: 'relative',
+    top: '50%',
+    left: '50%',
+    trasnform: 'translate(-50%, -50%)',
+  },
+
+  positionAbsoluteCenter: {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    trasnform: 'translate(-50%, -50%)',
+  },
+};
+```
+
+> 💡 theme 다른 파일에서 불러와서 사용하고 싶을 때는 어떻게 하나?
+
+- `기존`
+
+```tsx
 const PageNumber = styled.a`
   padding: 10px;
   font-size: 1.375rem;
@@ -143,9 +204,9 @@ const PageNumber = styled.a`
 `;
 ```
 
-`typescript` - type이 지정이 안되어있다는 에러가 나온다
+- `typescript` : type이 지정이 안되어있다는 에러가 나온다
 
-```jsx
+```tsx
 const theme: { [key: string]: string } = {
   bgColor: '#f0f3f8',
   mainColor: '#333333',
@@ -159,3 +220,7 @@ theme에서 타입 지정해주고, globalstyle에서는 변수 사용안함
 📎참고
 
 [https://junghyunkim.tistory.com/entry/이펙티브-타입스크립트2-타입스크립트-설정-noImplicitAny-strictNullChecks](https://junghyunkim.tistory.com/entry/%EC%9D%B4%ED%8E%99%ED%8B%B0%EB%B8%8C-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B82-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%84%A4%EC%A0%95-noImplicitAny-strictNullChecks)
+
+```toc
+
+```
