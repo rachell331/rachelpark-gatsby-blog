@@ -52,7 +52,7 @@
   "scripts": {
     "build": "gatsby clean && CI= gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"./*.{js,jsx,ts,tsx,json,md}\"",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "deploy": "gatsby clean && gatsby build && gh-pages -d public",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -62,6 +62,5 @@
   "repository": "https://github.com/zoomkoding/zoomkoding-gatsby-blog",
   "bugs": {
     "url": "https://github.com/zoomkoding/zoomkoding-gatsby-blog/issues"
-  },
-  "main": "index.js"
+  }
 }
