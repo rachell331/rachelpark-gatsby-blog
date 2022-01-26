@@ -71,6 +71,7 @@ module.exports = {
               maxWidth: 720,
               linkImagesToOriginal: false,
               backgroundColor: 'transparent',
+              truncate: true,
             },
           },
           {
