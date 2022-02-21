@@ -1,3 +1,12 @@
+---
+emoji:
+title: Setting with IDE(vscode)
+date: '2022-02-21 21:15:30'
+author: Rachel
+tags: PHP Study
+categories: Study PHP
+---
+
 # vscode 환경설정
 
 1.  php랑 apache 먼저 설치하기
