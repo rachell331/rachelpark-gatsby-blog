@@ -57,8 +57,95 @@ index.html은 정적 페이지를 형성하며, 웹 서버가 해석할 줄 알�
 
 [](https://www.php.net/manual/en/language.types.intro.php)
 
-(1) int
+(1) int & float
 
-(2) float
+- 정수(Integer) [ ...,-1,0,1,2,...]
+- 부동소수점(float) : 소수점
 
-(3) string
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<?php
+echo 1; //출력 방법1
+print(2); //출력 방법2
+echo 1.1;
+?>
+</body>
+</html>
+```
+
+출력 할 때 : echo
+구문이 끝나면 무조건 ;(세미콜론)은 필수
+사칙연산
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<h3>1+1</h3>
+<?php echo 1+1?>
+<h3>2-1</h3>
+<?php echo 2-1?>
+<h3>2*2</h3>
+<?php echo 2*2?>
+<h3>4/2</h3>
+<?php echo 4/2?>
+</body>
+</html>
+```
+
+(2) string
+
+- 문자열 표현 방식 : `' '`, `" "` 로 표현 (큰 따옴표는 큰 따옴표 끼리, 작은 따옴표는 작은 따옴표 끼리)
+- `echo "Hello \"W\"orld!";` 이렇게 하면 중복 사용 가능 ( `\ `)사용!
+
+```
+<?php
+echo "Hello World!";
+?>
+```
+
+- concatenation operator(결합 연산자) : `.` (좌항, 우항을 결합해서 하나의 문자열을 만든다.)
+
+```
+<?php
+echo "Hello "."World!";
+?>
+```
+
+- 문자열 길이 구하기 :
+
+```
+int strlent ( string $string )
+```
+
+```
+<?php
+echo strlen("Hello World!");
+?>
+```
+
+(3) 변수(variables)
+
+- 선언 : `$` 로 한다.
+
+```
+<?php
+
+$front = "Hello";
+$back = "World!";
+
+echo "$front ${$front}";
+echo "$back ${$back}";
+echo "$front $back";
+?>
+```
