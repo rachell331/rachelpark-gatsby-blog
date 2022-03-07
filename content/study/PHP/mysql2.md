@@ -119,3 +119,8 @@ catch (PDOException $e) {
 }
 include __DIR__ . '/../templates/output.html.php';
 ```
+
+✔️ $e변수
+자세한 오류 메세지를 비롯해 예외에 대한 정보를 제공함. 객체 형태
+
+try ~ catch ~ 문은 두 블록 중 최소한 한 곳의 코드는 반드시 실행된다. 두 경우 모두 $output 변수에 메세지가 할당되며, 이 할당된 메세지는 데이터베이스 접속 실행 결과에 따라 달라진다.(T/F)
