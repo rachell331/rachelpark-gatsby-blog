@@ -52,3 +52,70 @@ categories: Study PHP
 ok 버튼 클릭시 하단의 체크 박스가 나오는데, 각 체크 박스는 SQL 명령을 실행하는 권한을 나타낸다. 모두 권한을 부여하고자 할 경우 "Select All"을 클릭하고 Apply 버튼을 누르면 끝난다.
 
 2. PHP를 사용하여 MySQL에 접속
+
+[방법]
+(1) MySQL 라이브러리
+
+- 가장 오래된 데이터베이스 라이브러리
+- PHP 2.0에 처음 도입
+- 간단한 기능만 갖춤. PHP5.0에서 MySQLi로 대체
+- mysql_connect()
+
+(2) MySQLi(MySQL Improved) 라이브러리
+
+- PHP 5.0 부터 적용
+- mysqli_connect(), mysqli_query()
+
+(3) PDO(PHP Data Object) 라이브러리
+
+- PHP 5.1 부터 적용
+- 객체 지향형, 데이터베이스와 통신(거의 모든 서버와 호환되는 장점을 지님)
+
+📌 new PDO 구문
+
+- PDO 객체 반환. 이 객체는 커넥션을 식별하는 정보를 담는다.
+
+```
+new PDO('mysql:host=호스트명;dbname=데이터베이스명', '사용자명', '비밀번호')
+```
+
+[parameter]
+
+- 데이터베이스 정보를 나타내는 문자열 : DB종류(mysql:), 서버의 호스트명(host=hostname;), DB명(dbname=database)
+- PHP에서 사용할 MySQL 사용자명
+- 사용자명에 해당하는 비밀번호
+
+```
+$pdo = new PDO ('mysql:host=localhost;dbname=humor.joke', 'humordbuser', 'mypw');
+```
+
+MySQL서버가 정상적으로 작동하지 않을 경우, new PDO 구문은 예외를 발생시킨다.
+
+> ✔️PHP 예외처리
+> PHP가 지시받은 작업을 수행하지 못했을 때 발생.
+> 예외가 발생하면 PHP는 작동을 멈추고 이후의 코드를 실행하지 않는다.
+> 이 때, 오류 메세지를 표시하는데, 데이터베이스 접속 코드에서 예외가 발생할 경우 이 오류 메세지에 사용자의 정보가 담길 수 있다. 그래서 에러 핸들링에 각별히 주의해야 한다!
+
+❗️따라서 예외를 처리하려면, 예외가 발생할 가능성이 있는 코드를 *try 구문*으로 감싸야 한다.
+
+```php
+try {
+   //예외가 발생하는 작업
+}
+catch (ExceptionType $e) {
+  //예외 처리
+}
+```
+
+`try..catch..` 구문에서 `catch`는 예외가 발생했을 때만 실행된다.
+
+```php
+try {
+   $pdo = new PDO('mysql:host=localhost;dbname=humor.joke', 'humordbuser', 'mydb');
+   $output = '데이터베이스 접속에 성공하였습니다.';
+}
+catch (PDOException $e) {
+   $output = '데이터베이스 서버에 접속할 수 없습니다.';
+}
+include __DIR__ . '/../templates/output.html.php';
+```
