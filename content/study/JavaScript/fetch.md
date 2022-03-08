@@ -1,3 +1,12 @@
+---
+emoji:
+title: fetch
+date: '2022-01-06 13:33:37'
+author: Rachel
+tags: Front Study
+categories: Study
+---
+
 ## Using Fetch
 
 ```js
