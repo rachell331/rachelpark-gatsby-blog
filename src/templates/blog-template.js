@@ -49,8 +49,6 @@ export const pageQuery = graphql`
   query($slug: String, $nextSlug: String, $prevSlug: String) {
     cur: markdownRemark(fields: { slug: { eq: $slug } }) {
       id
-      html
-      excerpt(pruneLength: 500, truncate: true)
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
@@ -64,7 +62,6 @@ export const pageQuery = graphql`
 
     next: markdownRemark(fields: { slug: { eq: $nextSlug } }) {
       id
-      html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
@@ -78,7 +75,6 @@ export const pageQuery = graphql`
 
     prev: markdownRemark(fields: { slug: { eq: $prevSlug } }) {
       id
-      html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
