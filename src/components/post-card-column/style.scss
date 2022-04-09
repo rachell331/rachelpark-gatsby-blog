@@ -3,11 +3,13 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  max-width: 760px;
 
   .post-card-column {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 80%;
 
     .post-card-wrapper {
       margin-bottom: 10px;

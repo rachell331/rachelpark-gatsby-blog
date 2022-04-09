@@ -19,14 +19,16 @@ function HomePage({ data }) {
   return (
     <Layout>
       <Seo title="Home" />
-      <Bio author={author} language={language} />
-      <PostTabs
-        posts={posts}
-        onChange={onTabIndexChange}
-        tabs={categories}
-        tabIndex={tabIndex}
-        showMoreButton
-      />
+      <div style={{ display: 'flex' }}>
+        <Bio author={author} language={language} />
+        <PostTabs
+          posts={posts}
+          onChange={onTabIndexChange}
+          tabs={categories}
+          tabIndex={tabIndex}
+          showMoreButton
+        />
+      </div>
     </Layout>
   );
 }
