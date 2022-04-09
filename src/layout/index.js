@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
     }
   `);
   const { title, author } = data.site.siteMetadata;
-  
+
   return (
     <div className="page-wrapper">
       <PageHeader siteTitle={title || `Title`} />
