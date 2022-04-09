@@ -71,7 +71,6 @@ module.exports = {
               maxWidth: 720,
               linkImagesToOriginal: false,
               backgroundColor: 'transparent',
-              truncate: true,
             },
           },
           {
@@ -125,7 +124,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-advanced-sitemap`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-feed`,
     `gatsby-plugin-image`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
