@@ -64,7 +64,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         edges {
           node {
             id
-            excerpt(pruneLength: 500, truncate: true)
             fields {
               slug
             }
