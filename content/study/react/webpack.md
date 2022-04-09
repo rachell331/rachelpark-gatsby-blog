@@ -4,7 +4,7 @@ title: webpack으로 빌드하기
 date: '2022-03-13 22:05:51'
 author: Rachel
 tags: Front Study webpack React babel webpack-babel build
-categories: Study React
+categories: React
 ---
 
 ### webpack & babel

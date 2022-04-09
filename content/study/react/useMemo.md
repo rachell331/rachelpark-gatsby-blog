@@ -4,7 +4,7 @@ title: useMemo
 date: '2022-02-13 22:49:52'
 author: Rachel
 tags: Front React useMemo
-categories: React Typescript
+categories: React
 ---
 
 useMemo, useCallback과의 차이점은 무엇인지(useCallback에 대해서는 다음글에서 다뤄보기로 한다.), uesEffect랑 어떤 차이가 있는지 알아보기로 한다.

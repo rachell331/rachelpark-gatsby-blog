@@ -4,7 +4,7 @@ title: 크로스 브라우징
 date: '2022-01-06 22:33:37'
 author: Rachel
 tags: Front Study
-categories: Study
+categories: React
 ---
 
 # <span style="font-weight: 900;">크로스 브라우징</span>

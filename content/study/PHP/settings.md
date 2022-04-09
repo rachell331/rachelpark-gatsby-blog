@@ -4,7 +4,7 @@ title: Setting with IDE(vscode)
 date: '2022-02-21 21:15:30'
 author: Rachel
 tags: PHP Study
-categories: Study PHP
+categories: PHP
 ---
 
 # vscode 환경설정

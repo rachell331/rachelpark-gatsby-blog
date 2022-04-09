@@ -4,7 +4,7 @@ title: Intro & Data Types
 date: '2022-02-21 23:38:08'
 author: Rachel
 tags: PHP Study
-categories: Study PHP
+categories: PHP
 ---
 
 ## 1. 개요

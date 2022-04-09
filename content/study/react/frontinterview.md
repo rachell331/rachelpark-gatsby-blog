@@ -4,7 +4,7 @@ title: 프론트엔드 기술면접
 date: '2022-01-26 17:44:51'
 author: Rachel
 tags: Front Study
-categories: Study
+categories: React
 ---
 
 ## 1. 리액트를 사용하는 이유 & 리액트의 장점

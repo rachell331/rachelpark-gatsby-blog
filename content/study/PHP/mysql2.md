@@ -4,7 +4,7 @@ title: PHP - MySQL 데이터와 웹 출력
 date: '2022-03-07 22:11:04'
 author: Rachel
 tags: PHP MySQL DB
-categories: Study PHP
+categories: PHP
 ---
 
 ## 사용자가 웹 사이트에 방문해서 페이지를 호출했을 때 발생하는 일

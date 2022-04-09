@@ -4,7 +4,7 @@ title: fetch
 date: '2021-12-06 10:58:11'
 author: Rachel
 tags: Front Study
-categories: Study
+categories: JS
 ---
 
 ## Using Fetch

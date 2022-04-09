@@ -4,7 +4,7 @@ title: React+Typescript 초기 세팅
 date: '2022-01-17 19:14:31'
 author: Rachel
 tags: Front React Typescript
-categories: React Typescript
+categories: React TS
 ---
 
 - CRA+TS 타입스크립트 초기 세팅과정

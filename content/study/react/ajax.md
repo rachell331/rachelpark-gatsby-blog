@@ -4,7 +4,7 @@ title: Ajax(feat. Axios)
 date: '2022-01-17 19:10:06'
 author: Rachel
 tags: Front Study React
-categories: Study React
+categories: React
 ---
 
 ## Ajax (Asynchronous JavaScript and XML)

@@ -4,7 +4,7 @@ title: PHP - MySQL 세팅
 date: '2022-03-06 23:55:39'
 author: Rachel
 tags: PHP MySQL DB
-categories: Study PHP
+categories: PHP
 ---
 
 > ※참고

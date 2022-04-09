@@ -4,7 +4,7 @@ title: form 예제
 date: '2022-03-02 23:13:43'
 author: Rachel
 tags: PHP Study
-categories: Study PHP
+categories: PHP
 ---
 
 sum 이라는 함수는 입력값(parameter, 인자값)에 따라 다르게 동작한다.

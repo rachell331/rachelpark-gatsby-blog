@@ -4,7 +4,7 @@ title: PHP form
 date: '2022-03-03 22:44:22'
 author: Rachel
 tags: PHP Study
-categories: Study PHP
+categories: PHP
 ---
 
 ```html

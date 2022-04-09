@@ -4,7 +4,7 @@ title: 비전공자를 위한 이해할 수 있는 IT 지식 - 요약(1)
 date: '2022-02-14 23:14:18'
 author: Rachel
 tags: Study CS
-categories: Study CS
+categories: CS
 ---
 
 ## 프로그래밍 언어 & 운영체제(OS)

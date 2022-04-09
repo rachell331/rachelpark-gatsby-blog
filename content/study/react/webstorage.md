@@ -4,7 +4,7 @@ title: Local storage vs Session storage vs Cookie
 date: '2022-01-07 20:08:15'
 author: Rachel
 tags: Front Study
-categories: Study
+categories: React
 ---
 
 ## <span style="font-weight: 900;">Local Storage vs Session Storage</span>

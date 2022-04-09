@@ -7,16 +7,11 @@ tags: React useEffect react hooks
 categories: React
 ---
 
-# useEffect
-
-태그: function, skills
-
 # useEffect 란?
 
 > 부수 효과(Side Effect)
-화면에 그려지는 요소와 무관한 상태값 변경이 발생할 때 적용하는 것
-즉, 렌더링 외부세계에 영향을 주는 어떤 행위
-> 
+> 화면에 그려지는 요소와 무관한 상태값 변경이 발생할 때 적용하는 것
+> 즉, 렌더링 외부세계에 영향을 주는 어떤 행위
 
 class형 컴포넌트의 생명주기(life cycle)에서 `componentDidmount`, `componentDidUpdate`, `componentWillUnmount`가 합쳐진 것과 같다.
 

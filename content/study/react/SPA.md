@@ -4,7 +4,7 @@ title: SPA
 date: '2022-01-06 19:40:07'
 author: Rachel
 tags: Front Study
-categories: Study
+categories: React
 ---
 
 ## <span style="font-weight: 900;">SPA</span>

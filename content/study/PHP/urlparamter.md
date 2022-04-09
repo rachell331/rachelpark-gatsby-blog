@@ -4,7 +4,7 @@ title: URL Parameter
 date: '2022-02-24 23:29:37'
 author: Rachel
 tags: PHP Study
-categories: Study PHP
+categories: PHP
 ---
 
 # URL Parameter

@@ -4,7 +4,7 @@ title: JWT
 date: '2022-01-08 23:55:37'
 author: Rachel
 tags: Front Study
-categories: Study
+categories: React
 ---
 
 ## <span style="font-weight: 900;">일반적인 인증 토큰 vs 클레임(Claim) 기반 토큰</span>

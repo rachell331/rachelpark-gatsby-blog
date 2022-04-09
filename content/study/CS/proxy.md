@@ -4,7 +4,7 @@ title: Proxy
 date: '2022-02-12 23:54:37'
 author: Rachel
 tags: Study CS
-categories: Study CS
+categories: CS
 ---
 
 프록시

@@ -4,7 +4,7 @@ title: 함수 만들기
 date: '2022-02-28 23:51:54'
 author: Rachel
 tags: PHP Study
-categories: Study PHP
+categories: PHP
 ---
 
 sum 이라는 함수는 입력값(parameter, 인자값)에 따라 다르게 동작한다.

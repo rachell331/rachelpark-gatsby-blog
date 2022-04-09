@@ -4,7 +4,7 @@ title: PHP - 반복문
 date: '2022-02-27 23:20:50'
 author: Rachel
 tags: PHP Study
-categories: Study PHP
+categories: PHP
 ---
 
 반복이 되는 코드를 줄이는 건 개발자의 몫..

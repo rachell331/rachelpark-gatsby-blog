@@ -4,7 +4,7 @@ title: SSR / CSR
 date: '2022-01-06 19:09:43'
 author: Rachel
 tags: Front Study
-categories: Study
+categories: React
 ---
 
 ## <span style="font-weight: 900; background-color: #FEECE9;">SSR vs CSR</span>

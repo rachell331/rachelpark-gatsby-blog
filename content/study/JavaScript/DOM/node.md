@@ -4,7 +4,7 @@ title: Node 개요
 date: '2022-01-26 14:15:37'
 author: Rachel
 tags: Study DOM
-categories: Study
+categories: JS
 ---
 
 ## DOM 이란?

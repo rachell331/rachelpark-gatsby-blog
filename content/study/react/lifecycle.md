@@ -4,7 +4,7 @@ title: Life Cycle
 date: '2022-01-11 00:04:18'
 author: Rachel
 tags: Front Study React
-categories: Study React
+categories: React
 ---
 
 ![componentlife_cycle](componentlifecycle.001.png)

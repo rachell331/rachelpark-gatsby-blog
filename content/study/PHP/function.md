@@ -4,7 +4,7 @@ title: Functions
 date: '2022-02-25 23:43:26'
 author: Rachel
 tags: PHP Study
-categories: Study PHP
+categories: PHP
 ---
 
 #### strlen
