@@ -42,3 +42,35 @@ class형 컴포넌트의 생명주기(life cycle)에서 `componentDidmount`, `co
 렌더링에 영향을 주는 값들은 '상태값'으로 우리가 흔히 알고 있는 `state, props`**값**이다.
 
 따라서 `useEffect`는 렌더링과 무관한 로직이 렌더링과정에서 실행되게 되면, 성능이나 최적화에 영향을 미칠 수 있기 때문에 render가 될 때 실행되면 안된다.
+
+```javascript
+import React, { useState } from 'react';
+
+export default function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>You Clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>클릭</button>
+    </div>
+  );
+}
+```
+
+> count는 단순한 숫자에 불과하다.
+> (1) 처음으로 화면에 그려질 때(렌더링 할 때) : useState로부터 가져온 count = 0
+> (2) setCount에서 현재 count 값에 +1을 리턴해준다. (count update in Click event)
+> (3) 컴포넌트를 호출해서 화면에 그린다. (재렌더링) : 이 때 count = 1
+> (4) 한 번 더 클릭하면, (2)의 useState 함수가 호출되면서 count의 값을 업데이트해준다.
+> (5) 컴포넌트를 호출해서 화면에 그린다. (재렌더링)
+
+_React는 state를 업데이트 할 때마다 컴포넌트를 호출한다.(렌더링)_
+
+여기서 렌더링의 결과물은 `Counter.js`의 상태(state) 값을 지켜본다. 여기서 상태 값은 함수 안에서 고유의 상수로 존재하는 값이다.
+따라서 <u>어떠한 데이터 바인딩도 수행하지 않는다.</u>
+
+> 🤔 여기서 질문 : 클릭할 때마다 count값이 계속 바뀌어져서 보이는데, 그럼 이때마다 화면 전체가 렌더링되는건가?
+> 답은 YES,
+> state를 변경하는 useState를 호출할 때 리액트는 컴포넌트 전체를 다시 한 번 그리게 된다.
+> 왜냐하면 리액트는 가장 최신의 렌더링 결과물과 일치하도록 DOM에 업데이트를 해주기 때문이다.
