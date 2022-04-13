@@ -49,6 +49,7 @@ export const pageQuery = graphql`
   query($slug: String, $nextSlug: String, $prevSlug: String) {
     cur: markdownRemark(fields: { slug: { eq: $slug } }) {
       id
+      html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
