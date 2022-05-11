@@ -74,3 +74,28 @@ _React는 state를 업데이트 할 때마다 컴포넌트를 호출한다.(렌�
 > 답은 YES,
 > state를 변경하는 useState를 호출할 때 리액트는 컴포넌트 전체를 다시 한 번 그리게 된다.
 > 왜냐하면 리액트는 가장 최신의 렌더링 결과물과 일치하도록 DOM에 업데이트를 해주기 때문이다.
+> [정리]
+
+• useEffect는 총 2개의 인자를 받는다.
+
+• 첫번째 인자는 function으로서의 Effect이다.
+
+두번째 인자는 dependency(의존성)인데, 이 deps 리스트가 있다면, 이 리스트에 있는 값 일때만 값이 변하도록(update)
+
+useEffect가 활성화 되는 것이다.
+
+• 이 desp 리스트를 한국말로는 "의존성 배열"이라고 하는데, 이 의존성 배열안에 있는 변수의 상태값이 변할 경우,
+
+function으로서의 effect는 다시 실행된다는 것을 명심하자 (componentDidUpdate)
+
+• useEffect는 함수를 일반적으로 리턴하기 때문에, componentWillUnMount의 역할도 한다.
+
+• useEffect 안에 함수를 넣으면, 그 함수는 dependency가 존재하지 않는 한,
+
+componentDidMount, componentDidUpdate 때 호출된다.
+
+• 리턴 문은 componentWillUnMount일 때 실행된다.
+
+함수를 리턴한다면, useEffect를 리턴받은 그 함수는 componentWillUnMount 때 호출된다.
+
+​
